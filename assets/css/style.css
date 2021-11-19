@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Raleway&display=swap');
+
+/* font-family: 'Genos', sans-serif;
+font-family: 'Raleway', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4c4c4c;
+  font-family: 'Genos', sans-serif;
+  overflow-x: hidden;
+}
+
+#headerWrap {
+  text-align: center;
+  color: #ff8f3a;
+  margin: 5vh;
+}
+
+#headerWrap h1 {
+  font-size: 5vh;
+}
+
+#formWrap {
+  display: flex;
+  justify-content: center;
+}
+
+#formTitle, #listTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff8f3a;
+}
+
+#usernameInput {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #ff8f3a;
+  margin-bottom: 1rem;
+}
+
+#commentInput {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #ff8f3a;
+}
+
+#sendBtn {
+  width: 100%;
+  background-color: black;
+  color: #ff8f3a;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  padding: 0.5rem;
+  font-family: 'Genos', sans-serif;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-family: 'Genos', sans-serif;
+  font-size: 1rem;
+}
+
+#errMsg {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ff8f3a;
+}
