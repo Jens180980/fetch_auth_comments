@@ -11,7 +11,7 @@ import {
 
 //Main datahandling function
 const getData = async () => {
-  let data
+  let tokenData
   // Get token to acces api
   async function getToken() {
     const formData = new FormData()
@@ -23,8 +23,8 @@ const getData = async () => {
       body: formData
     }
 
-    data = await apiResult('https://api.mediehuset.net/token', options)
-    sessionStorage.setItem('authInfo', JSON.stringify(data))
+    tokenData = await apiResult('https://api.mediehuset.net/token', options)
+    sessionStorage.setItem('authInfo', JSON.stringify(tokenData))
 
   } // End of getToken
   getToken()
@@ -41,7 +41,8 @@ const getData = async () => {
       }
     }
 
-    const data = await apiResult('https://api.mediehuset.net/sdg/comments', options);
+    const apiData = await apiResult('https://api.mediehuset.net/sdg/comments', options);
+    console.log(apiData);
   } // End of getAccess
 
   getAccess()
